@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code generator | devChallenges.io</title>
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./resources/Logo.svg" alt="QRCODE logo" />
+        <!-- Enter url -->
+        <div class="input-container">
+          <input type="url" name="url" id="url" placeholder="Enter a url" />
+          <button class="qr-btn">QR code</button>
+        </div>
+      </div>
+
+      <!-- QR Result -->
+      <div id="result-container" style="display: none">
+        <img class="logo" src="./resources/Logo-small.svg" alt="QRCODE logo" />
+        <div id="qrcode"></div>
+        <div class="btn-container">
+          <button id="download-btn">
+            Download<img src="./resources/Load_circle_duotone.svg" alt="" />
+          </button>
+          <button id="share-btn">
+            Share<img src="./resources/link_alt.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Khaoula</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="./script.js"></script>
+</html>

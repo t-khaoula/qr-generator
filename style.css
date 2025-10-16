@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --accent-color: #263fa9;
+  --text-white: #f2f5f9;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../resources/qa-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.author-info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+.container,
+#result-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #030616;
+  border: 2px solid var(--accent-color);
+  border-radius: 18px;
+  height: 64px;
+  min-width: fit-content;
+  width: 48.52%;
+  max-width: 621px;
+  color: var(--text-white);
+  padding: 25px 0 25px 30px;
+}
+
+input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-white);
+  font-size: 16px;
+  outline: none;
+  padding: 25px 0;
+  padding-right: 140px;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: var(--text-white);
+}
+
+.qr-btn {
+  position: absolute;
+  right: 0;
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  border: none;
+  border-radius: 14px;
+  margin: 6px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+#result-container .logo {
+  position: absolute;
+  top: 3rem;
+}
+
+.qr-img-container {
+  background-color: #282e3e;
+  border-radius: 50%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-white);
+  font-size: 14px;
+  padding: 15px 35px 15px 32px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.btn-container button img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+@media (max-width: 413px) {
+  .input-container {
+    width: 95%;
+  }
+
+  input {
+    padding-right: 10px;
+  }
+}
