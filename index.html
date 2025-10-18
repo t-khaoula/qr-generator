@@ -18,7 +18,13 @@
         <img src="./resources/Logo.svg" alt="QRCODE logo" />
         <!-- Enter url -->
         <div class="input-container">
-          <input type="url" name="url" id="url" placeholder="Enter a url" />
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="Enter a url"
+            autocomplete="off"
+          />
           <button class="qr-btn">QR code</button>
         </div>
       </div>
@@ -26,11 +32,13 @@
       <!-- QR Result -->
       <div id="result-container" style="display: none">
         <img class="logo" src="./resources/Logo-small.svg" alt="QRCODE logo" />
-        <div id="qrcode"></div>
+        <div class="qrcode-container">
+          <div id="qrcode"></div>
+        </div>
         <div class="btn-container">
-          <button id="download-btn">
+          <a id="download-btn" download>
             Download<img src="./resources/Load_circle_duotone.svg" alt="" />
-          </button>
+          </a>
           <button id="share-btn">
             Share<img src="./resources/link_alt.svg" alt="" />
           </button>
@@ -39,7 +47,8 @@
     </main>
 
     <div class="author-info">
-      Coded by <a href="#">Khaoula</a> | Challenge by
+      Coded by <a href="https://github.com/t-khaoula/">Khaoula</a> | Challenge
+      by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.

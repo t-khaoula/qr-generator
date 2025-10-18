@@ -107,7 +107,8 @@ input::placeholder {
   gap: 25px;
 }
 
-.btn-container button {
+.btn-container button,
+.btn-container #download-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +121,21 @@ input::placeholder {
   cursor: pointer;
 }
 
-.btn-container button img {
+.qrcode-container {
+  background-color: #282e3e;
+  border-radius: 50%;
+  padding: 30px;
+  margin-bottom: 2.5rem;
+}
+
+#qrcode {
+  padding: 30px;
+  background-color: var(--text-white);
+  border-radius: 14px;
+}
+
+.btn-container button img,
+.btn-container #download-btn img {
   height: 20px;
   margin-left: 10px;
 }
