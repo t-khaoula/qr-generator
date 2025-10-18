@@ -1,5 +1,7 @@
 # QR Code Generator
 
+https://t-khaoula.github.io/qr-generator/
+
 ![Thumbnail for the QR code generator coding challenge](./thumbnail.jpg)
 
 ## Welcome! 👋
